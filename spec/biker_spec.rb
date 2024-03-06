@@ -30,6 +30,9 @@ RSpec.describe Biker do
     end
 
     it "logs rides" do
+      @biker1.learn_terrain!(:gravel)
+      @biker1.learn_terrain!(:hills)
+
       @biker1.log_ride(@ride1, 92.5)
       @biker1.log_ride(@ride1, 91.1)
       @biker1.log_ride(@ride2, 60.9)
@@ -41,6 +44,9 @@ RSpec.describe Biker do
     end
 
     it "logs a personal record" do
+      @biker1.learn_terrain!(:gravel)
+      @biker1.learn_terrain!(:hills)
+
       @biker1.log_ride(@ride1, 92.5)
       @biker1.log_ride(@ride1, 91.1)
       @biker1.log_ride(@ride2, 60.9)
