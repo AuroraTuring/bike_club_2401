@@ -19,4 +19,12 @@ RSpec.describe Ride do
     end
   end
 
+  describe "#methods" do
+    it "checks total distance" do
+      expect(@ride1.total_distance).to eq(21.4)
+      expect(@ride2.loop?).to be true
+      expect(@ride2.total_distance).to eq(14.9)
+    end
+  end
+
 end

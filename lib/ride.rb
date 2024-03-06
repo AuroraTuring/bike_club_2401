@@ -8,4 +8,8 @@ class Ride
     @terrain = data[:terrain]
   end
 
+  def total_distance
+
+  end
+
 end
