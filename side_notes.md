@@ -7,7 +7,7 @@ Graded Items:
 5. A Biker can report its personal record for a specific ride. This is the lowest time recorded for a ride. This method will return false if the Biker hasn't completed the ride
 
 
-pry(main)> require './lib/ride'
+<!-- pry(main)> require './lib/ride'
 # => true
 
 pry(main)> require './lib/biker'
@@ -53,7 +53,7 @@ pry(main)> biker.rides
 # => {
 #      #<Ride:0x00007fc62ca32a10...> => [92.5, 91.1],
 #      #<Ride:0x00007fc62cb42ba8...> => [60.9, 61.6]
-#    }
+#    } -->
 
 pry(main)> biker.personal_record(ride1)
 => 91.1

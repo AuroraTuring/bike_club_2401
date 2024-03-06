@@ -20,4 +20,8 @@ class Biker
     @rides[ride] << distance
   end
 
+  def personal_record
+
+  end
+
 end
