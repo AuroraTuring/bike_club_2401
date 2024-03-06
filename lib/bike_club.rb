@@ -2,7 +2,7 @@ class BikeClub
   attr_reader :name, :bikers
 
 
-  def initialize(name)
+  def initialize(name, biker)
     @name = name
     @bikers = []
   end
@@ -11,6 +11,7 @@ class BikeClub
     @bikers << biker
   end
 
+  # which Biker has logged the most rides?
   def most_rides
 
   end
