@@ -1,7 +1,6 @@
 class BikeClub
   attr_reader :name, :bikers
 
-
   def initialize(name, bikers)
     @name = name
     @bikers = bikers
@@ -19,5 +18,4 @@ class BikeClub
     # sum/map over bikers for count of rides
     # sort and take the last value
   end
-
 end

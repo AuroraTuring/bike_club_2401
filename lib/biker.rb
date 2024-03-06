@@ -29,5 +29,4 @@ class Biker
     @rides[ride] ||= []
     @rides[ride].sort.first || false
   end
-
 end
