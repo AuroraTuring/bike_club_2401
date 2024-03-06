@@ -13,7 +13,8 @@ class BikeClub
 
   # which Biker has logged the most rides?
   def most_rides
-
+    # sum/map over bikers for count of rides
+    # sort and take the last value
   end
 
 end
