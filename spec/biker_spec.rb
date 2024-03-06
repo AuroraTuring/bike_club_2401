@@ -3,9 +3,9 @@ require './lib/biker'
 
 RSpec.describe Biker do
   before(:each) do
-    @biker1 = Biker.new("Kenny", 30)
     @ride1 = Ride.new({name: "Walnut Creek Trail", distance: 10.7, loop: false, terrain: :hills})
     @ride2 = Ride.new({name: "Town Lake", distance: 14.9, loop: true, terrain: :gravel})
+    @biker1 = Biker.new("Kenny", 30)
     @biker2 = Biker.new("Athena", 15)
   end
 
@@ -18,6 +18,15 @@ RSpec.describe Biker do
       expect(@biker1.max_distance).to eq(30)
       expect(@biker1.rides).to eq({})
       expect(@biker1.acceptable_terrain).to eq([])
+    end
+  end
+
+  describe "#methods" do
+    it "adds acceptable terrains" do
+      @biker1.learn_terrain!(:gravel)
+      @biker1.learn_terrain!(:hills)
+
+      expect(@biker1.acceptable_terrain).to eq([:gravel, :hills])
     end
   end
 
